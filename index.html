@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GSAP 3 - Basic</title>
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="/src/index.css" />
+    <script defer type="module" src="/src/main.ts"></script>
+  </head>
+  <body class="flex flex-col p-10 gap-y-16 overflow-x-hidden text-[#e8e6e3] bg-[#222526]">
+    <div class="flex flex-col gap-y-6">
+      <h1 class="text-4xl">gsap.to()</h1>
+      <div class="box bg-blue-300" data-gsap="to()"></div>
+    </div>
+
+    <div class="flex flex-col gap-y-6">
+      <h1 class="text-4xl">gsap.from()</h1>
+      <div class="box bg-blue-300" data-gsap="from()"></div>
+    </div>
+
+    <div class="flex flex-col gap-y-6">
+      <h1 class="text-4xl">gsap.fromTo()</h1>
+      <div class="box bg-blue-300" data-gsap="fromTo()"></div>
+    </div>
+
+    <div class="flex flex-col gap-y-6">
+      <h1 class="text-4xl">gsap.set()</h1>
+      <div class="box bg-blue-300" data-gsap="set()"></div>
+    </div>
+
+    <div class="flex flex-col gap-y-6">
+      <h1 class="text-4xl">Special Properties</h1>
+      <div class="flex flex-col gap-y-4">
+        <h2 class="text-2xl">Easing</h2>
+        <div class="flex gap-x-10 text-black">
+          <div class="box bg-blue-300 select-none" data-gsap="easing-linear">linear</div>
+          <div class="box bg-blue-300 select-none" data-gsap="easing-power4">power4</div>
+          <div class="box bg-blue-300 select-none" data-gsap="easing-bounce">bounce</div>
+          <div class="box bg-blue-300 select-none" data-gsap="easing-elastic">elastic</div>
+          <div class="box bg-blue-300 select-none" data-gsap="easing-slow">slow</div>
+        </div>
+
+        <h2 class="text-2xl">Stagger</h2>
+        <div class="flex gap-x-10">
+          <div class="box bg-blue-300" data-gsap="stagger"></div>
+          <div class="box bg-blue-300" data-gsap="stagger"></div>
+          <div class="box bg-blue-300" data-gsap="stagger"></div>
+          <div class="box bg-blue-300" data-gsap="stagger"></div>
+          <div class="box bg-blue-300" data-gsap="stagger"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex flex-col gap-y-6">
+      <h1 class="text-4xl">gsap.timeline()</h1>
+      <div class="flex gap-x-10">
+        <div class="box bg-blue-300" data-gsap="timeline()-1"></div>
+        <div class="box bg-blue-300" data-gsap="timeline()-2"></div>
+        <div class="box bg-blue-300" data-gsap="timeline()-3"></div>
+        <div class="box bg-blue-300" data-gsap="timeline()-4"></div>
+        <div class="box bg-blue-300" data-gsap="timeline()-5"></div>
+      </div>
+    </div>
+
+    <div class="flex flex-col gap-y-6">
+      <h1 class="text-4xl">Control methods</h1>
+      <div class="box bg-blue-300" data-gsap="control-box"></div>
+      <div class="flex gap-x-10">
+        <button
+          type="button"
+          class="bg-red-300 text-black font-bold p-4 rounded select-none"
+          data-gsap="control-play"
+        >
+          play()
+        </button>
+        <button
+          type="button"
+          class="bg-red-300 text-black font-bold p-4 rounded select-none"
+          data-gsap="control-pause"
+        >
+          pause()
+        </button>
+        <button
+          type="button"
+          class="bg-red-300 text-black font-bold p-4 rounded select-none"
+          data-gsap="control-resume"
+        >
+          resume()
+        </button>
+        <button
+          type="button"
+          class="bg-red-300 text-black font-bold p-4 rounded select-none"
+          data-gsap="control-reverse"
+        >
+          reverse()
+        </button>
+        <button
+          type="button"
+          class="bg-red-300 text-black font-bold p-4 rounded select-none"
+          data-gsap="control-restart"
+        >
+          restart()
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
